@@ -1,0 +1,8 @@
+posts-per-page: 10
+tagsUrls:
+  OI: /category/oi/
+  CTF: /category/ctf/
+  课程: /category/course/
+  杂项: /category/misc/
+requireFiles:
+  - /assets/style.css

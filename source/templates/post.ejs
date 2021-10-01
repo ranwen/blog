@@ -1,0 +1,32 @@
+<div class="markdown-body">
+  <h1><%= post.title %></h1>
+  <%- post.content %>
+  <blockquote>
+    <p>日期： <%= post.date %></p>
+    <p class="tags">
+      标签： <% if (post.tags.length) post.tags.forEach(function(tag){ %>
+      <a href="<%= getTagUrl(tag) %>" class="hoverlink"> <%= tag %> </a>
+      <% }); else { %> 无 <% } %>
+    </p>
+    <% if (post.extra.comments) post.extra.comments.forEach(function(s){ %>
+    <p><%- s %></p>
+    <% }); %>
+  </blockquote>
+</div>
+
+<div class="markdown-body">
+  <script
+    src="https://giscus.app/client.js"
+    data-repo="ranwen/blog"
+    data-repo-id="R_kgDOGJBsxQ"
+    data-category="General"
+    data-category-id="DIC_kwDOGJBsxc4B_PzW"
+    data-mapping="specific"
+    data-term="post-<%= post.id %>"
+    data-reactions-enabled="1"
+    data-emit-metadata="0"
+    data-theme="light"
+    crossorigin="anonymous"
+    async
+  ></script>
+</div>

@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>ranwen's blog</title>
+    <link>https://ranwen.de/</link>
+    <description>随便写写</description>
+    <language>zh-hans-cn</language>
+    <lastBuildDate><%= new Date().toISOString() %></lastBuildDate>
+    <atom:link href="https://ranwen.de/feed/" rel="self" type="application/rss+xml" />
+    <%- posts %>
+  </channel>
+</rss>
