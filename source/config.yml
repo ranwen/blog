@@ -2,6 +2,8 @@ posts-per-page: 10
 tagsUrls:
   OI: /category/oi/
   CTF: /category/ctf/
+  HPC: /category/hpc/
+  Writeup: /category/wp/
   课程: /category/course/
   杂项: /category/misc/
 requireFiles:
